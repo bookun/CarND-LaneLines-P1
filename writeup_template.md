@@ -36,7 +36,14 @@ Finally, I draw approximation straight lines in right and left side.
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![smaple image][]
+![gray image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/gray.png)
+![blur_gaussian image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/blur_gaussian.png)
+![canny image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/canny.png)
+![my region image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/my_region.png)
+![maked image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/masked_edge.png)
+![hough transfer](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/hough.png)
+![result image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/result.png)
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline
