@@ -23,13 +23,20 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I converted the images to gaussian_blue.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+Next, I have detected edges by using canny (low_threshold=50, high_threshold=150) , then I declared the vertices. By using the vertices, I masked edges and executed hough transfer.
+
+
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by calculating slope( (y2 - y1) / (x2 - x1) ).
+
+if slope > 0, the line is a right edge. If slope < 0, that is a left edge.
+
+Finally, I draw approximation straight lines in right and left side.
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
+![smaple image][]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
