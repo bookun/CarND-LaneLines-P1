@@ -36,26 +36,31 @@ Finally, I draw approximation straight lines in right and left side.
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![gray image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/gray.png)
-![blur_gaussian image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/blur_gaussian.png)
-![canny image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/canny.png)
-![my region image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/my_region.png)
-![maked image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/masked_edge.png)
-![hough transfer](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/hough.png)
-![result image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/result.png)
+![gray image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/gray.png?raw=true)
+
+![blur_gaussian image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/blur_gaussian.png?raw=true)
+
+![canny image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/canny.png?raw=true)
+
+![my region image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/my_region.png?raw=true)
+
+![maked image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/masked_edge.png?raw=true)
+
+![hough transfer](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/hough.png?raw=true)
+
+![result image](https://github.com/bookun/CarND-LaneLines-P1/blob/master/sample_images/result.png?raw=true)
 
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+My pipline has a shortcomming.
+Shadow have a bad influence on detecting line.
+For examle, in `test_viedeos_output/challenge.mp4`, lines drew by my pipeline is not  on target when shadow appered.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+Color detection will improve to my pipeline.
+I want to mask shadow. 
+By detecting white and yellow,  it will not be affected by shadows.
